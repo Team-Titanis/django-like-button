@@ -3,7 +3,7 @@ import logging
 from django.template import Library, Node
 from django.conf import settings
 from django.utils import simplejson
-from django.utils.importlib import import_module
+from importlib import import_module
 
 register = Library()
 log = logging.getLogger(__name__)
