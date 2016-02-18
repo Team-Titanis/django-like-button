@@ -2,7 +2,11 @@ import logging
 
 from django.template import Library, Node
 from django.conf import settings
-from django.utils import simplejson
+try:
+    import json as simplejson
+except:
+    from django.utils import simplejson
+
 from importlib import import_module
 
 register = Library()
